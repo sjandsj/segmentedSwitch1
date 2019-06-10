@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="segmentedControlSwitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vph-j5-Epz">
+                                <rect key="frame" x="32" y="129" width="310" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.96175917879999995" blue="0.1154014852" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.20609017109345118" blue="0.26642832683998963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeLabel:" destination="BYZ-38-t0r" eventType="valueChanged" id="L0u-qQ-GvC"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d2h-Z1-Bpt">
+                                <rect key="frame" x="32" y="339" width="310" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="205" id="SLx-ab-6gw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="53"/>
+                                <color key="textColor" red="0.22241524565935222" green="0.5073658988724391" blue="0.77900340025906734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46037966159999999" green="0.60836301810000004" blue="0.3120642106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vph-j5-Epz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="3Xy-6k-KjW"/>
+                            <constraint firstItem="d2h-Z1-Bpt" firstAttribute="leading" secondItem="Vph-j5-Epz" secondAttribute="leading" id="8nU-NT-Il3"/>
+                            <constraint firstItem="Vph-j5-Epz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cw5-uz-jnQ"/>
+                            <constraint firstItem="Vph-j5-Epz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="hmv-UH-ysi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d2h-Z1-Bpt" secondAttribute="bottom" constant="123" id="si3-mJ-NOC"/>
+                            <constraint firstItem="d2h-Z1-Bpt" firstAttribute="trailing" secondItem="Vph-j5-Epz" secondAttribute="trailing" id="xY1-bF-e8k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="d2h-Z1-Bpt" id="31M-qs-6my"/>
+                        <outlet property="segmentedControlSwitch" destination="Vph-j5-Epz" id="UNm-qu-dGP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="-8.5457271364317844"/>
+        </scene>
+    </scenes>
+</document>
